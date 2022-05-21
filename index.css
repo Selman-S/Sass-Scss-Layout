@@ -10,6 +10,7 @@ header {
   background-color: #30a7c3;
   align-items: center;
   padding: 1rem;
+  height: 10vh;
 }
 
 #logo img {
@@ -41,6 +42,7 @@ main .banner {
   background-color: #cc6699;
   justify-content: space-between;
   padding: 1rem;
+  height:21vh;
   line-height: 2rem;
 }
 main .btn button {
@@ -67,6 +69,7 @@ main .btn button:hover {
 }
 
 .cards {
+  height:33vh;
   display: flex;
   padding: 1rem;
 }
@@ -109,6 +112,7 @@ main .btn button:hover {
 
 .article {
   padding: 1rem;
+  height:22vh;
   display: flex;
 }
 .article .article1, .article .article2 {
@@ -126,7 +130,11 @@ main .btn button:hover {
 
 footer .socialIcons {
   display: flex;
-  height: 8rem;
+  height: 11vh;
+}
+footer h2 {
+  height:3vh;
+  background-color: rgb(50, 246, 24);
 }
 footer .socialIcons .social1 {
   width: 20%;
