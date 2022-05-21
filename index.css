@@ -56,6 +56,15 @@ main .btn button:hover {
   cursor: pointer;
   background-color: rgb(255, 215, 222);
 }
+.image img {
+  min-width: 300px;
+  max-width: 400px;
+  width: 30%;
+}
+.image {
+  display: flex;
+  justify-content: end;
+}
 
 .cards {
   display: flex;
@@ -67,7 +76,7 @@ main .btn button:hover {
   color: white;
   height: 20rem;
   border: 2px solid rgb(175, 29, 29);
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 3px 2%;
 }
 .cards .card2 {
@@ -76,7 +85,7 @@ main .btn button:hover {
   color: rgb(246, 18, 128);
   height: 20rem;
   border: 2px solid rgb(175, 29, 29);
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 3px 2%;
 }
 .cards .card3 {
@@ -85,7 +94,7 @@ main .btn button:hover {
   color: rgb(20, 35, 238);
   height: 20rem;
   border: 2px solid rgb(175, 29, 29);
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 3px 2%;
 }
 .cards .card4 {
@@ -94,7 +103,7 @@ main .btn button:hover {
   color: rgb(248, 236, 13);
   height: 20rem;
   border: 2px solid rgb(175, 29, 29);
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 3px 2%;
 }
 
@@ -184,6 +193,31 @@ body {
   background-color: rgb(255, 215, 222);
   color: white;
   font-size: 1.2rem;
+}
+@media (max-width: 700px) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner .image {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+  .cards .card1 {
+    width: 46%;
+  }
+  .cards .card2 {
+    width: 46%;
+  }
+  .cards .card3 {
+    width: 46%;
+  }
+  .cards .card4 {
+    width: 46%;
+  }
+  
 }
 
 /*# sourceMappingURL=index.css.map */
