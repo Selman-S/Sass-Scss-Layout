@@ -1,0 +1,35 @@
+
+$textColor: #000000, #55004e, #a8610f, #121456, #048090;
+footer{
+    .socialIcons {
+        display: flex;
+       height: 8rem;
+        @for $i from 1 through 5 {
+            .social#{$i}{
+                width: 20%;
+                height: 100%;
+                background-color: lighten( #81ff1a, $i* 5);
+                color:nth($textColor,$i);
+                font-size: $i*1rem;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+
+            }
+        }
+    }
+}
+
+$dark: 1;
+
+.footer {
+  @if $dark==3 {
+    background-color: white;
+    color: black;
+  } @else if $dark==2 {
+    background-color: gray;
+  } @else {
+    background-color: green;
+  }
+}
